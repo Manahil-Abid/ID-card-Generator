@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    color: #2664c2;
+    text-align: center;
+  }
+  #auth-container p {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: blue;
+  }
+  
+  
+  
+  /* Container Styling */
+  #auth-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin-top: 20px;
+  }
+  
+  /* Input Styling */
+  input, textarea, button , select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #2664c2;
+    outline: none;
+  }
+  /* student form styling */
+  #formPage{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%
+  }
+  
+  #studentForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  #studentForm > div {
+    flex: 1 1 calc(50% - 16px);
+    min-width: calc(50% - 16px);
+  }
+  
+  #studentForm > div.full-width {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 4px;
+    }
+  
+  input, select {
+  width: 100%;
+    padding: 10px;
+  margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  /* Make full-width inputs (like photo and buttons) span both columns */
+  .full-width {
+    grid-column: span 2;
+  }
+  /* 
+  
+  /* Form Labels */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input and Select Styling */
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color:  #2664c2;
+  }
+  
+  /* For single row inputs */
+  #studentForm input[type="text"],
+  #studentForm input[type="email"],
+  #studentForm input[type="tel"],
+  #studentForm select {
+    grid-column: span 1;
+  }
+  
+  /* For full-width elements like textarea and button */
+  #studentForm textarea,
+  #studentForm button {
+    grid-column: span 2;
+  } */
+  
+  
+  /* Button Styling */
+  button {
+    background-color:  #2664c2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #2664c2;
+  }
+  
+  /* Admit Card Styling */
+  #admitCard {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  #admitCard h2 {
+    text-align: center;
+    color:  #2664c2;
+  }
+  
+  #admitPhoto {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+  }
+  
+  #admitCard p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  #admitCard strong {
+    color: #000;
+  }
+  
+  #admitCard button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2664c2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #admitCard button:hover {
+    background-color: #2664c2;
+  }
+  

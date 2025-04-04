@@ -1,0 +1,318 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+}
+
+/* Header Section */
+header {
+    background-color: #f8f9fa; /* Light background for the header */
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #007bff; /* Highlighted color for "Tutor" */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Hover effect for links */
+}
+
+.btn-main {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-main:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+
+.main {
+    background: linear-gradient(135deg, #2664c2, #2a86e9, #e0f4ff);      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    height: 75vh;
+    overflow-y: hidden;
+  }
+  
+  .main-content {
+    display: flex;
+    color: white;
+    gap: 40px;
+  }
+  .main-left .tag {
+    background-color: #e0f4ff;
+    color: #2664c2;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .main-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .main-left p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .main-left .highlight {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .main-left .btn-main {
+    background-color: #2664c2;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-left .btn-main:hover {
+    background-color: #1e4e92;
+  }
+  
+  /* Hero Right */
+
+  .image{
+   margin-left: 150%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0 , 0 , 0, 0.2);
+    width: fit-content;
+  }
+
+  /* sign in */
+  /* Center the auth-container */
+#auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2664C2;
+}
+
+#auth-container input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#auth-container button {
+  display: block; /* Ensure buttons stack vertically */
+  width: 60%; /* Adjust width for better alignment */
+  padding: 10px;
+  margin: 10px auto; /* Add space between buttons and center them */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; /* Center the text inside the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#auth-container button:hover {
+  background-color: #0056b3;
+}
+
+#auth-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+#auth-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#auth-container a:hover {
+  text-decoration: underline;
+}
+  
+/* Form Page Styling */
+#formPage {
+  max-width: 600px;
+  height: 90%;
+  margin: 50px auto;
+  padding: 40px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formPage h2 {
+  text-align: center;
+  color: #2664c2;
+}
+
+#studentForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#studentForm div {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+#studentForm .full-width {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+input:focus, select:focus {
+  outline: 2px solid #2664C2; /* Blue outline */
+}
+
+button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #2664C2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e4e92;
+}
+
+/* id card */
+#idCard {
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+#idCard h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#idCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #007bff;
+  display: block; /* Center the image */
+  margin-left: auto; /* Center the image */
+  margin-right: auto; /* Center the image */
+}
+
+#idCard p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  text-align: center; /* Center the text */
+}
+
+#idCard button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block; /* Center the button */
+  margin-left: auto; /* Center the button */
+  margin-right: auto; /* Center the button */
+}
+
+#idCard button:hover {
+  background-color: #0056b3;
+}
