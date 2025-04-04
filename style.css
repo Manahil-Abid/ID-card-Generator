@@ -32,6 +32,12 @@ header {
 .logo span {
     color: #007bff;
 }
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #007bff;
+}
 
 nav {
     display: flex;
