@@ -1,3 +1,4 @@
+/* General Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -131,154 +132,190 @@ nav a:hover {
     width: fit-content;
   }
 
-/* Sign In Section */
+  /* sign in */
+  /* Center the auth-container */
 #auth-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #auth-container h2 {
-    color: #2664C2;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2664C2;
 }
 
-#auth-container input,
-#auth-container button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+#auth-container input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 #auth-container button {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border: none;
+  display: block; /* Ensure buttons stack vertically */
+  width: 60%; /* Adjust width for better alignment */
+  padding: 10px;
+  margin: 10px auto; /* Add space between buttons and center them */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; /* Center the text inside the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #auth-container button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+#auth-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
 }
 
 #auth-container a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
 }
 
 #auth-container a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-/* Form Section */
+  
+/* Form Page Styling */
 #formPage {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    background: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  height: 90%;
+  margin: 50px auto;
+  padding: 40px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #formPage h2 {
-    text-align: center;
-    color: #2664c2;
+  text-align: center;
+  color: #2664c2;
 }
 
 #studentForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 #studentForm div {
-    width: 48%;
-    margin-bottom: 15px;
+  width: 48%;
+  margin-bottom: 15px;
 }
 
 #studentForm .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 label {
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 input, select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
 }
-
 input:focus, select:focus {
-    outline: 2px solid #2664C2;
+  outline: 2px solid #2664C2; /* Blue outline */
 }
 
 button {
-    background: #2664C2;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 48%;
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #2664C2;
+  color: white;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #1e4e92;
+  background: #1e4e92;
 }
 
-/* ID Card */
+/* id card */
 #idCard {
-    background: #fff;
-    border: 2px solid #007bff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    max-width: 350px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+#idCard h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #idCard img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    border: 2px solid #007bff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #007bff;
+  display: block; /* Center the image */
+  margin-left: auto; /* Center the image */
+  margin-right: auto; /* Center the image */
 }
 
 #idCard p {
-    font-size: 16px;
-    color: #333;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  text-align: center; /* Center the text */
 }
 
 #idCard button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
-    border: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block; /* Center the button */
+  margin-left: auto; /* Center the button */
+  margin-right: auto; /* Center the button */
 }
 
 #idCard button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Responsive Adjustments */
