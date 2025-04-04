@@ -318,8 +318,122 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .container.header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between links */
+    }
+
     .main {
         flex-direction: column; /* Stack elements vertically */
         padding: 40px; /* Adjust padding */
+        height: auto; /* Allow height to adjust based on content */
     }
+
+    .main-content {
+        flex-direction: column; /* Stack main content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .image {
+        margin-left: 0; /* Remove left margin */
+        width: 100%; /* Make image responsive */
+        max-width: 300px; /* Limit max width */
+    }
+
+    #auth-container {
+        width: 90%; /* Full width for smaller screens */
+        padding: 20px; /* Add padding */
+    }
+
+    #formPage {
+        padding: 20px; /* Reduce padding */
+    }
+
+    #studentForm div {
+        width: 100%; /* Full width for form fields */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+    }
+
+    #idCard {
+        width: 90%; /* Make ID card responsive */
+        padding: 15px; /* Adjust padding */
+    }
+
+    #idCard img {
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+    }
+}/* Responsive Styles */
+@media (max-width: 768px) {
+    .container.header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between links */
+    }
+
+    .main {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 40px; /* Adjust padding */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .main-content {
+        flex-direction: column; /* Stack main content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .image {
+        margin-left: 0; /* Remove left margin */
+        width: 100%; /* Make image responsive */
+        max-width: 300px; /* Limit max width */
+    }
+
+    #auth-container {
+        width: 90%; /* Full width for smaller screens */
+        padding: 20px; /* Add padding */
+    }
+
+    #formPage {
+        padding: 20px; /* Reduce padding */
+    }
+
+    #studentForm div {
+        width: 100%; /* Full width for form fields */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+    }
+
+    #idCard {
+        width: 90%; /* Make ID card responsive */
+        padding: 15px; /* Adjust padding */
+    }
+
+    #idCard img {
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+    }
+}
+
+
+
+
+
+
+
     
